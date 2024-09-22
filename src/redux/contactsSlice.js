@@ -17,10 +17,8 @@ const contactsSlice = createSlice({
   },
 });
 
-// Експорт екшенів
 export const { addContact, deleteContact } = contactsSlice.actions;
 
-// Селектор для вибірки контактів
 export const selectContacts = (state) => state.contacts.items;
 
 export default contactsSlice.reducer;

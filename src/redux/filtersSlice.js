@@ -1,4 +1,3 @@
-// src/redux/filtersSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const filtersSlice = createSlice({
@@ -13,10 +12,10 @@ const filtersSlice = createSlice({
   },
 });
 
-// Експорт екшену
+
 export const { changeFilter } = filtersSlice.actions;
 
-// Селектор для вибірки значення фільтра
+
 export const selectNameFilter = (state) => state.filters.name;
 
 export default filtersSlice.reducer;
