@@ -4,9 +4,11 @@ import css from "./ContactForm.module.css"
 import { Formik,  Field, Form,  ErrorMessage  } from 'formik';
 import * as Yup from 'yup';
 import { nanoid } from 'nanoid'
+import { useDispatch } from 'react-redux';
+import { addContact } from '../../redux/contactsSlice';
 
 
-export default function ContactForm({onAdd}){
+export default function ContactForm(){
     const dispatch = useDispatch();
 
 
